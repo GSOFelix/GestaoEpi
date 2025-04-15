@@ -10,9 +10,9 @@ public class Worker extends Employee {
     }
 
     public void clockOut() {
-        var hora = LocalDateTime.now();
+        var now = LocalDateTime.now();
         var formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        var dataHora = hora.format(formatter);
+        var dataHora = now.format(formatter);
 
         System.out.println("** Turno encerrado para operário:  " + this.name + " **");
         System.out.printf("Data e hora de saida: " + dataHora);
