@@ -1,11 +1,13 @@
 package Entidades;
 
+import Enums.Turno;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Worker extends Employee {
-    public Worker(String name, int registration, String turn) {
+    public Worker(String name, int registration, Turno turn) {
         super(name, registration, turn);
     }
 
